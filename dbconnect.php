@@ -4,6 +4,6 @@
 //$select_db = mysql_select_db("bookbnb", $connect);
 //// echo $connect;
 //// echo $select_db;
-$connect = mysqli_connect("localhost", "root", "", "bookbnb");
+$connect = mysqli_connect("us-cdbr-azure-southcentral-f.cloudapp.net", "b4bd0cf2fe1a6e", "f13ceba1", "bookbnb");
 
 ?>
