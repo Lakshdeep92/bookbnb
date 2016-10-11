@@ -1,0 +1,466 @@
+body{
+  background-color: #efefef;
+}
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+    display: inline;
+}
+/* laksh */
+.navbar{
+  border: 0px;
+  border-radius: 0px;
+  background-color: #273244;
+}
+.navbar-header a img{
+  height: 40px;
+  margin-top: 5px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.navbar-header a img:hover{
+  height: 30px;
+  margin-top: 10px;
+}
+.navbar-header{
+  width: 115px;
+}
+.navbar-brand{
+  padding: 0px 15px !important;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.linkStyle a{
+  color: #bdbdbd !important;
+  font-size: 12px;
+}
+.linkStyle a:hover{
+  color: #273244 !important;
+  font-size: 12px;
+  transition: background 1.0s linear;
+  background-color: #e7e7e7 !important;
+}
+.nav{
+  padding-left: 40px;
+}
+.container-fluid{
+  width: 62%;
+}
+.container h2, p{
+  font-family: tahoma;
+}
+.thumbnail-book-info h3{
+  font-family: tahoma;
+}
+.bookImage img{
+  opacity: 0.9;
+}
+.bookImage img:hover{
+  opacity: 1.0;
+}
+.thumbnail:hover{
+  border: 1px solid #273244;
+  transition: 1s;
+}
+.thumbnail-book-info h3, p, a{
+  font-family: tahoma;
+  font-size: 14px;
+  color: #273244 !important;
+  text-align: center;
+}
+.thumbnail-book-info h3, p, a:hover{
+  font-family: tahoma;
+  font-size: 14px;
+  text-decoration: none;
+  color: #337ab7 !important;
+  text-align: center;
+}
+.section-intro {
+  text-align: left !important;
+  font-family: tahoma;
+  word-spacing: 4px;
+}
+/* ---- footer design ------*/
+.mobileFooter{
+  display: none;
+}
+.learn-more{
+  margin-top: 70px;
+  padding-bottom: 10px;
+}
+.footerDesign h3{
+  font-family: tahoma !important;
+  font-size: 16px !important;
+}
+.footerDesign ul{
+  padding-left: 2px !important;
+}
+.footerDesign a{
+  font-family: tahoma !important;
+  font-size: 14px !important;
+  color: #dfdfdf !important;
+  line-height: 25px;
+}
+.footerDesign p{
+  font-family: tahoma !important;
+  font-size: 14px !important;
+  color: #dfdfdf !important;
+  line-height: 25px;
+  text-align: left;
+}
+#subscribe-email{
+  font-family: tahoma !important;
+  font-size: 14px !important;
+  color: #dfdfdf !important;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.footerDesign a:hover{
+  font-family: tahoma !important;
+  font-size: 14px !important;
+  color: #fff !important;
+  line-height: 25px;
+}
+.copyrightDesign{
+  text-align: left;
+  color: #a8e05b !important;
+  font-size: 12px !important;
+  padding-left: 10px;
+}
+.breadcrumb{
+    background-color: #fff !important;
+    padding: 21px 2px !important;
+    margin-bottom: 0px !important;
+}
+/* ------ modal style -----------------*/
+.modal-content{
+    background-color: #efefef;
+}
+/* --------------- end modal style ------------*/
+/* ----- end footer design -----*/
+@media only screen and (max-width: 1600px)  {
+  .container-fluid{
+    width: 100%;
+  }
+}
+/* ------ for search bar ------ */
+.searchDiv{
+  width: 400px;
+  margin-top: 7px;
+  margin-bottom: 0px !important;
+}
+.searchButton{
+  padding-left: 20px;
+  padding-top: 7px;
+}
+@media only screen and (max-width: 1000px)  {
+  .searchDiv{
+    width: 160px;
+    margin-top: 7px;
+    margin-bottom: 0px !important;
+  }
+  .container-fluid{
+    width: 100%;
+  }
+}
+/* ---- end search bar -----*/
+/* ----- carousel  ---------*/
+.carousel-inner{
+  height: 550px;
+}
+.carousel-inner .item img{
+  height: 550px;
+}
+.carousel-caption h3{
+  text-shadow: 2px 3px #273244;
+  text-align: left !important;
+  font-size: 40px;
+}
+.carousel-caption p{
+  text-align: left;
+  text-shadow: 2px 2px #273244;
+  color: #efefef !important;
+  word-spacing: 3px;
+  font-size: 20px;
+}
+ .carousel-caption{
+   bottom: 50%;
+ }
+/* ------- end carousel ------*/
+@media only screen and (max-width: 767px)  {
+  .linkStyle a{
+    text-align: left;
+  }
+  .navbar-header{
+    width: 100%;
+  }
+  .navbar-header a img{
+    height: 32px;
+    margin-top: 10px;
+  }
+  .navbar-header a img:hover{
+    height: 32px;
+    margin-top: 10px;
+  }
+  .nav{
+    padding-left: 0px;
+  }
+  .searchDiv{
+    width: 100%;
+    margin-bottom: 10px !important;
+  }
+  .searchButton{
+    padding-left: 0px;
+    padding-top: 7px;
+  }
+  .searchDiv input{
+    border-radius: 0px;
+  }
+  .searchButton button{
+    width: 100%;
+    border-radius: 0px;
+  }
+  .carousel-inner{
+    height: 350px;
+  }
+  .carousel-inner .item img{
+    height: 350px;
+  }
+  .homepage-recommendations p{
+    font-size: 12px !important;
+  }
+  .copyrightDesign{
+    margin-top: 10px;
+    margin-left: 4px;
+  }
+  .carousel-caption h3{
+    text-shadow: 2px 3px #273244;
+    text-align: left !important;
+    font-size: 20px;
+  }
+  .carousel-caption p{
+    text-align: left;
+    text-shadow: 2px 2px #273244;
+    color: #efefef !important;
+    word-spacing: 3px;
+    font-size: 12px;
+  }
+   .carousel-caption{
+     bottom: 30%;
+   }
+}
+@media only screen and (max-width: 450px)  {
+  .otherFooter{
+    display: none;
+  }
+  .mobileFooter{
+    display: block;
+  }
+  .firstBlock{
+    width: 90px !important;
+    float: left;
+    padding-right: 15px;
+  }
+  .secondBlock{
+    float: left;
+    padding-right: 12px;
+  }
+}
+@media only screen and (max-width: 800px)  {
+  .otherFooter{
+    display: none;
+  }
+  .mobileFooter{
+    display: block;
+  }
+  .firstBlock{
+    width: 230px;
+    float: left;
+    padding-right: 15px;
+  }
+  .secondBlock{
+    float: left;
+    padding-right: 12px;
+  }
+}
+/* end laksh */
+
+.jumbotron {
+  background-image: url('images/jumbotron_2.jpg');
+  background-size: 100% 100%;
+  height: 500px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.section-title, .section-intro {
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+/* ========================= editors-choices ========================= */
+
+.editors-choices .thumbnail {
+  margin-bottom: 10px;
+}
+
+.editors-choices .thumbnail-book-info {
+  padding-left: 10px;
+}
+
+.editors-choices h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 14px;
+  color: #998970;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.editors-choices p {
+  font-family: 'Shift', sans-serif;
+  font-size: 10px;
+  color: #998970;
+}
+
+/* ========================= most-popular ========================= */
+
+.most-popular .thumbnail {
+  margin-bottom: 10px;
+}
+
+.most-popular .thumbnail-book-info {
+  padding-left: 10px;
+}
+
+.most-popular h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 14px;
+  color: #998970;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.most-popular p {
+  font-family: 'Shift', sans-serif;
+  font-size: 10px;
+  color: #998970;
+}
+
+.learn-more {
+  background-color: #273244;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  color: #a8e05b;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.jumbotron .container {
+    position: relative;
+    top: 100px;
+}
+
+.homepage-recommendations {
+    background-color: #efefef;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.homepage-recommendations h2 {
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.homepage-recommendations p {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+.books{
+  background-color: #efefef;
+  height: 190px;
+  color: #000 !important;
+  margin-bottom: 10px;
+}
+.books:hover{
+  background-color: #e6edf9;
+  margin-bottom: 10px;
+}
+.books_image{
+  height: 167px;
+  width: 150px;
+}
+.books_detail{
+  text-align: left;
+}
+.books_detail h4{
+  text-align: left !important;
+  color: #337ab7 !important;
+}
+.books_detail p{
+  text-align: left !important;
+  color: #000 !important;
+}
+.edit_button{
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    font-size: 12px;
+    color: #fff !important;
+}
+.delete_button{
+    padding: 4px 8px 4px 8px;
+    border-radius: 4px;
+    background-color: #f34336;
+    font-size: 12px;
+    color: #fff !important;
+    text-decoration: none;
+}
+.shopping{
+    background-color: #fff;
+}
+.profileImage{
+    height: 220px;
+    width: 100%;
+}
+.profileImageBlock{
+    padding: 2px;
+    background-color: #efefef;
+    margin-bottom: 25px;
+}
+.box-primary{
+    border: 1px solid #efefef;
+    margin-bottom: 25px;
+}
+.box-title{
+    margin: 0px;
+    padding: 10px;
+    background-color: #efefef;
+}
+.box-body{
+    padding: 10px;
+}

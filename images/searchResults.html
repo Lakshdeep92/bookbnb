@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Search Result</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/searchResult.css">
+  <script src="Bootstrap/js/jquery.min.js"></script>
+  <script src="Bootstrap/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- begin ========================= navbar-default ========================= -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo.png" class="logoImage"></a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li>
+            <form action="/searchResult" method="get">
+              <div class="form-group searchDiv">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter title or ISBN">
+              </div>
+            </form>
+          </li>
+          <li class="searchButton">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="linkStyle"><a href="#" data-toggle="modal" data-target="#signup-modal"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          <li class="linkStyle"><a href="#" data-toggle="modal" data-target="#signup-modal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li class="linkStyle"><a href="#" data-toggle="modal" data-target="#login-modal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- ========================= navbar-default ========================= end -->
+
+  <!-- begin ========================= Modal ========================= -->
+  <div id="login-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" style="display: block;">&times;</button>
+          <h3 class="text-center">LOG IN</h3>
+          <form class="form form-signup" role="form">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" placeholder="Username" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" placeholder="Password" />
+              </div>
+            </div>
+            <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-block" role="button">SUBMIT</a>
+          </form>
+        </div>
+        <!-- modal-footer -->
+        <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+  <div id="signup-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" style="display: block;">&times;</button>
+          <h3 class="text-center">SIGN UP</h3>
+          <form class="form form-signup" role="form">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="text" class="form-control" placeholder="First Name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                <input type="text" class="form-control" placeholder="Last Name" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                <input type="text" class="form-control" placeholder="Email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                <input type="password" class="form-control" placeholder="Password" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-home"></span></span>
+                <input type="text" class="form-control" placeholder="Address" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                <input type="text" class="form-control" placeholder="Age" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="glyphicon glyphicon-credit-card"></span></span>
+                <input type="text" class="form-control" placeholder="Credit card" />
+              </div>
+            </div>
+            <a href="http://www.jquery2dotnet.com" class="btn btn-sm btn-primary btn-block" role="button">SUBMIT</a>
+          </form>
+        </div>
+        <!-- modal-footer -->
+        <!-- <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- ========================= Modal ========================= end -->
+  
+  <!-- begin ========================= searchResults-list ========================= -->
+  <h3>Search Results of "1984 George Orwell"</h3>
+  <div class="searchResults-list">
+    <div class="container search-results-list">
+      <div class="list-group">
+        <a href="#" class="list-group-item">
+          <div class="clearfix float-my-children">
+            <img src="images/books/smarter.png" width=100>
+            <div>some text here</div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item">
+          <div class="clearfix float-my-children">
+            <div class="searchImage">
+              <img src="images/books/hitchhiker.jpg" width=100>
+            </div>
+            <div class="clearfix float-my-children">
+              <h4>The Hitchhiker's Guide to the Galaxy</h4>
+              <p>Mostly Harmless is a novel by Douglas Adams and the fifth book in the Hitchhiker's Guide to the Galaxy series. It is described on the cover of the first editions as "The fifth book in the increasingly inaccurately named Hitchhikers Trilogy".</p>
+              <p>status: Rented out</p>
+              <p>Owner: Some One</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item">
+          <div class="clearfix float-my-children">
+            <div class="searchImage">
+              <img src="images/books/hitchhiker.jpg" width=100>
+            </div>
+            <div class="clearfix float-my-children">
+              <h4>The Hitchhiker's Guide to the Galaxy</h4>
+              <p>Mostly Harmless is a novel by Douglas Adams and the fifth book in the Hitchhiker's Guide to the Galaxy series. It is described on the cover of the first editions as "The fifth book in the increasingly inaccurately named Hitchhikers Trilogy".</p>
+              <p>status: Rented out</p>
+              <p>Owner: Some One</p>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="list-group-item">
+          <div class="clearfix float-my-children">
+            <div class="searchImage">
+              <img src="images/books/hitchhiker.jpg" width=100>
+            </div>
+            <div class="clearfix float-my-children">
+              <h4>The Hitchhiker's Guide to the Galaxy</h4>
+              <p>Mostly Harmless is a novel by Douglas Adams and the fifth book in the Hitchhiker's Guide to the Galaxy series. It is described on the cover of the first editions as "The fifth book in the increasingly inaccurately named Hitchhikers Trilogy".</p>
+              <p>status: Rented out</p>
+              <p>Owner: Some One</p>
+            </div>
+          </div>
+        </a>
+        <div class="myDiv">
+          <a href="#" class="list-group-item">
+            <div class="clearfix float-my-children">
+              <div class="searchImage">
+                <img src="images/books/hitchhiker.jpg" width=100>
+              </div>
+              <div class="clearfix float-my-children">
+                <h4>The Hitchhiker's Guide to the Galaxy</h4>
+                <p>Mostly Harmless is a novel by Douglas Adams and the fifth book in the Hitchhiker's Guide to the Galaxy series. It is described on the cover of the first editions as "The fifth book in the increasingly inaccurately named Hitchhikers Trilogy".</p>
+                <p>status: Rented out</p>
+                <p>Owner: Some One</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- begin ========================= learn-more ========================= -->
+    <div class="learn-more">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footerDesign">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footerDesign">
+            <h3>Learn More</h3>
+            <ul>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Responsibilities</a></li>
+              <li><a href="#">Why Rent out?</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footerDesign">
+            <h3>Trust and Safety</h3>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footerDesign">
+            <h3>
+            <span class="glyphicon glyphicon-copyright-mark"></span>
+            <span class="glyphicon glyphicon-unchecked"></span>
+            <span class="glyphicon glyphicon-eye-open"></span>
+            <span class="glyphicon glyphicon-ok-sign"></span>
+            <span class="glyphicon glyphicon-refresh"></span>
+            <span class="glyphicon glyphicon-off"></span>
+            </h3>
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <p>Subscribe here to keep up with new book resources.</p>
+                <input type="email" class="form-control" id="subscribe-email" placeholder="Email address">
+              </div>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <p class="copyrightDesign"> &copy; BookBNB 2016</p>
+        </div>
+      </div>
+      <!-- container -->
+    </div>
+    <!-- learn-more -->
+    <!-- ========================= learn-more ========================= end -->
+  </div>
+  <!-- searchResults-list -->
+  <!-- ========================= searchResults-list ========================= end -->
+</body>
+
+</html>

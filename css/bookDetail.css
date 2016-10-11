@@ -1,0 +1,326 @@
+.container {
+  padding: 0px;
+}
+
+.search-results-list {
+  padding: 0px 250px;
+}
+
+.searchBox .col-md-6 {
+  width: 80%;
+  padding: 0px;
+}
+
+.float-my-children > * {
+  float: left;
+  margin-right: 5px;
+}
+
+
+/* this is called a clearfix. it makes sure that the container's children floats are cleared, without using extra markup */
+
+.clearfix {
+  *zoom: 1/* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+
+/* end clearfix*/
+
+
+/* below is just to make things easier to see, not required */
+
+.iconDetails {
+  margin-left: 2%;
+  float: left;
+}
+
+.container2 {
+  width: 100%;
+  height: auto;
+  padding: 1%;
+}
+
+h4 {
+  margin: 0px;
+}
+
+
+
+
+
+/*********************************************
+          Call Bootstrap
+*********************************************/
+
+@import url("bootstrap/bootstrap.min.css");
+@import url("bootstrap-override.css");
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/*********************************************
+            Theme Elements
+*********************************************/
+
+.gold{
+  color: #FFBF00;
+}
+
+/*********************************************
+          PRODUCTS
+*********************************************/
+
+.product{
+  height: 357px;
+  padding-left: 2px !important;
+}
+
+.product img{
+  max-height: 357px;
+  max-width: 280px;
+}
+.bookDetailImageDiv{
+  float: left;
+  padding-right: 20px;
+}
+.bookDetailSImageDiv img{
+  height: 112px !important;
+  width: 120px !important;
+  float: left;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 1200px){
+  .product img{
+    max-width: 100%;
+  }
+  .bookDetailImageDiv{
+    float: none;
+    padding-right: 0px;
+  }
+  .bookDetailSImageDiv img{
+    height: 90px !important;
+    width: 100px !important;
+    float: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .item-container{
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .smallImageDiv{
+    display: none;
+  }
+  .item-container{
+    margin-top: 0px;
+  }
+}
+@media only screen and (max-width: 768px)  {
+  .bookDetailImageDiv{
+    float: none;
+    padding-right: 0px;
+  }
+  .smallImageDiv{
+    float: none;
+  }
+  .bookDescription{
+    float: right;
+  }
+  .bookDetailSImageDiv img{
+    height: 70px !important;
+    width: 82px !important;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 11px;
+  }
+  .lastImage{
+    margin-right: 0px !important;
+  }
+}
+.comments{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.userImage{
+  height: 90px;
+  width: 90px;
+  float: left;
+  margin-right: 10px;
+}
+.userImage img{
+  height: 90px;
+  width: 90px;
+}
+.usernameComments{
+  font-family: tahoma;
+  font-size: 18px;
+  color: #273244 !important;
+}
+.usernameComments:hover{
+  font-family: tahoma;
+  font-size: 18px;
+  color: #a8e05a !important;
+}
+.comment{
+  text-align: justify;
+  font-family: tahoma;
+  font-size: 12px;
+  color: #000 !important;
+}
+.headingComments{
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #273244;
+  color: #fff;
+  border-radius: 5px;
+  font-family: tahoma;
+}
+.comments{
+  padding-left: 0px !important;
+}
+.moduleImage{
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin-right: 15px;
+}
+.moduleImage img{
+  height: 150px;
+  width: 150px;
+
+}
+.simpleText{
+  font-family: tahoma;
+  font-size: 12px;
+}
+.similartextLinks{
+  font-family: tahoma;
+  font-size: 14px;
+  color: #273244 !important;
+}
+.product-rating{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.product-title{
+  font-size: 20px;
+}
+
+.product-desc{
+  font-size: 14px;
+}
+
+.product-price{
+  font-size: 22px;
+}
+
+.product-stock{
+  color: #74DF00;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.product-info{
+    margin-top: 50px;
+}
+.popupImage{
+  opacity: 0.8;
+}
+.popupImage:hover{
+  opacity: 1.0;
+}
+
+/*********************************************
+          VIEW
+*********************************************/
+
+.content-wrapper {
+  max-width: 1140px;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  border: 0px;
+  border-radius: 0px;
+}
+
+.container-fluid{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.view-wrapper {
+  float: right;
+  max-width: 70%;
+  margin-top: 25px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 100%;
+}
+
+/*********************************************
+        ITEM
+*********************************************/
+
+.service1-items {
+  padding: 0px 0 0px 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 321px;
+  width: 130px;
+}
+
+.service1-item {
+  height: 107px;
+  width: 120px;
+  display: block;
+  float: left;
+  position: relative;
+  padding-right: 20px;
+  border-right: 1px solid #DDD;
+  border-top: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
+}
+
+.service1-item > img {
+  max-height: 110px;
+  max-width: 110px;
+  opacity: 0.6;
+  transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+}
+
+.service1-item > img:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.service-image-left {
+  padding-right: 50px;
+}
+
+.service-image-right {
+  padding-left: 50px;
+}
+
+.service-image-left > center > img,.service-image-right > center > img{
+  max-height: 155px;
+}
